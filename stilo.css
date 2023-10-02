@@ -4,12 +4,18 @@
 body, button {
 background-image:url(bg.png);
 /* font-family: monospace; */
-font-size: 50px;
+font-size: 18px;
 }
 
 input {
 background-image:url(bg.png);
 /* font-family: monospace; */
-font-size: 40px;
+font-size: 18px;
 width: 80%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 9px;
 }

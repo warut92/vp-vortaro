@@ -3,6 +3,8 @@ function sercxi() {
   let cxiuj_vortoj_HTML = cxiuj_vortoj.innerHTML;
   let disigitaj_vortoj = cxiuj_vortoj_HTML.split(/\n/g);
 
+  document.getElementById('nombro').innerText = disigitaj_vortoj.length
+
   let vortoj_Arr, i;
   for (i = 0; i < disigitaj_vortoj.length; i++) {
     vortoj_Arr = disigitaj_vortoj[i];
@@ -27,7 +29,7 @@ function sercxi() {
 
   if (sercxitaj_vortoj !== "") {
     document.getElementById("output").innerHTML = "<hr>" + sercxitaj_vortoj;
-  } else document.getElementById("output").innerHTML = "<hr>" + "ne estas la vorto en ĉi tiu vortaro! <br> bonvolu aldoni la vorton kaj la traduko ĉe  <a href=\"https://github.com/warut92/vp-vortaro/blob/main/index.html\"> Github </a>";
+  } else document.getElementById("output").innerHTML = "<hr>" + "ne estas la vorto en ĉi tiu vortaro! <br> bonvolu aldoni la vorton kaj la tradukon ĉe  <a href=\"https://github.com/warut92/vp-vortaro/blob/main/index.html\"> Github </a>";
 }
 
 function aperigi() {
@@ -43,3 +45,4 @@ function enigi(litero) {
   document.getElementById('input').value += litero;
   sercxi();
 }
+sercxi();
