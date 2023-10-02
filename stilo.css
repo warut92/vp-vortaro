@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, button {
+background-image:url(bg.png);
+/* font-family: monospace; */
+font-size: 50px;
+}
+
+input {
+background-image:url(bg.png);
+/* font-family: monospace; */
+font-size: 40px;
+width: 80%;
+}

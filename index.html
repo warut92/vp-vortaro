@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Vortaro Esperanto - Volapuko</title>
+  <link rel="stylesheet" href="./stilo.css">
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<center>Vortaro Esperanto - Volapuko</center><br>
+<input id="input" oninput="sercxi()"></input><button onclick="aperigi()">⌨</button>
+<div id="klavaro" style="display:none;">
+  <button onclick="enigi(this.innerText)">ä</button>
+  <button onclick="enigi(this.innerText)">ö</button>
+  <button onclick="enigi(this.innerText)">ü</button>
+</div>
+<div id="output"></div>
+<div id="vortaro" style="display:none;">
+alfabeto : lafab
+artikolo : lartüg
+mi : ob
+mia : obik, oba
+traduki : tradutön
+vojaĝo : täv
+vorto : vöd
+vortaro : vödabuk
+pri : za
+por : pro
+skribi : penön
+partopreni en : kompenön pö
+en : in
+urbo : zaf
+interesi : nitedön
+interesiĝi en/pri : nitedälön dö/tefü
+parto : dil
+</div>
+<!-- <footer><small>en la vortaro estas:<span id="nombro"></span> vortoj.</small></footer> -->
+  <script  src="./skripto.js"></script>
+</body>
+</html>
