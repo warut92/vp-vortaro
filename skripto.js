@@ -27,7 +27,7 @@ function sercxi() {
 
   if (sercxitaj_vortoj !== "") {
     document.getElementById("output").innerHTML = "<hr>" + sercxitaj_vortoj;
-  } else document.getElementById("output").innerHTML = "<hr>" + "ne estas la vorto en ĉi tiu vortaro! <br> bonvolu aldoni la vorton kaj la traduko ĉe ...";
+  } else document.getElementById("output").innerHTML = "<hr>" + "ne estas la vorto en ĉi tiu vortaro! <br> bonvolu aldoni la vorton kaj la traduko ĉe  <a href=\"https://github.com/warut92/vp-vortaro/blob/main/index.html\"> Github </a>";
 }
 
 function aperigi() {
