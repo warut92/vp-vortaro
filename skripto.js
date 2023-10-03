@@ -3,7 +3,7 @@ function sercxi() {
   let cxiuj_vortoj_HTML = cxiuj_vortoj.innerHTML;
   let disigitaj_vortoj = cxiuj_vortoj_HTML.split(/\n/g);
 
-  document.getElementById('nombro').innerText = disigitaj_vortoj.length
+  document.getElementById('nombro').innerText = disigitaj_vortoj.length + " vortoj. Laste kreita" + document.lastModified
 
   let vortoj_Arr, i;
   for (i = 0; i < disigitaj_vortoj.length; i++) {
