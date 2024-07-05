@@ -3,7 +3,10 @@ function sercxi() {
   let cxiuj_vortoj_HTML = cxiuj_vortoj.innerHTML;
   let disigitaj_vortoj = cxiuj_vortoj_HTML.split(/\n/g);
 
-  document.getElementById('nombro').innerText = disigitaj_vortoj.length + " vortoj. Laste kreita" + document.lastModified
+  //forigi malplenajn ĉenojn
+  disigitaj_vortoj = disigitaj_vortoj.filter(n => n)
+
+  document.getElementById('nombro').innerText = disigitaj_vortoj.length + " vortoj. Laste ŝanĝita " + document.lastModified
 
   let vortoj_Arr, i;
   for (i = 0; i < disigitaj_vortoj.length; i++) {
@@ -24,12 +27,12 @@ function sercxi() {
 
   sercxitaj_vortoj = sercxitaj_vortoj.replace(
     new RegExp(`${str_sxablono}`, "gi"),
-    "<b>" + str_sxablono + "</b>"
+    "<b><u>" + str_sxablono + "</u></b>"
   );
 
   if (sercxitaj_vortoj !== "") {
     document.getElementById("output").innerHTML = "<hr>" + sercxitaj_vortoj;
-  } else document.getElementById("output").innerHTML = "<hr>" + "ne estas la vorto en ĉi tiu vortaro! <br> bonvolu aldoni la vorton kaj la tradukon ĉe  <a href=\"https://github.com/warut92/vp-vortaro/blob/main/index.html\"> Github </a>";
+  } else document.getElementById("output").innerHTML = "<hr>" + "ne estas la vorto <i>\"" + str_sxablono + "\"</i> en ĉi tiu vortaro! <br> bonvolu aldoni ĝin ĉe  <a href=\"https://github.com/warut92/vp-vortaro/blob/main/index.html\"> Github </a>";
 }
 
 function aperigi() {
