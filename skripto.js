@@ -1,10 +1,13 @@
+let disigitaj_vortoj = ""
 function sercxi() {
   let cxiuj_vortoj = document.getElementById("vortaro");
   let cxiuj_vortoj_HTML = cxiuj_vortoj.innerHTML;
-  let disigitaj_vortoj = cxiuj_vortoj_HTML.split(/\n/g);
+  disigitaj_vortoj = cxiuj_vortoj_HTML.split(/\n/g);
 
   //forigi malplenajn ĉenojn
   disigitaj_vortoj = disigitaj_vortoj.filter(n => n)
+
+  console.log(disigitaj_vortoj);
 
   document.getElementById('nombro').innerText = disigitaj_vortoj.length + " vortoj. Laste ŝanĝita " + document.lastModified
 
@@ -49,3 +52,10 @@ function enigi(litero) {
   sercxi();
 }
 sercxi();
+
+//montri ĉiujn vortojn.
+function montri() {
+document.write(disigitaj_vortoj.toString().replace(/,(?!\s)/g, "<br><hr>"))
+document.body.style.backgroundColor = "black"
+document.body.style.color = "white"
+}
