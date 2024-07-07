@@ -59,3 +59,17 @@ document.write(disigitaj_vortoj.toString().replace(/,(?!\s)/g, "<br><hr>"))
 document.body.style.backgroundColor = "black"
 document.body.style.color = "white"
 }
+
+//umlaŭtigo per :
+function umlaŭtigi() {
+  let vorto = document.getElementById('input').value
+  let fina_litero = vorto.substring(vorto.length - 2)
+  let komenca_litero = vorto.substring(0,vorto.length-2)
+  if (fina_litero === "o:") {
+    document.getElementById('input').value = komenca_litero + "ö"
+  } else if (fina_litero === "a:") {
+    document.getElementById('input').value = komenca_litero + "ä"
+  } else if (fina_litero === "u:") {
+    document.getElementById('input').value = komenca_litero + "ü"
+  }
+}

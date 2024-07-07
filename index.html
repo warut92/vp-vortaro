@@ -7,8 +7,8 @@
 </head>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<center>Vortaro Esperanto - Volapuko</center><br>
-<input id="input" oninput="sercxi()"></input><button onclick="aperigi()">⌨</button>
+<center>🌐 Vortaro Esperanto - Volapuko</center><br>
+<input id="input" oninput="sercxi();umlaŭtigi()"></input><button onclick="aperigi()">⌨</button>
 <div id="klavaro" style="display:none;">
   <button onclick="enigi(this.innerText)">ä</button>
   <button onclick="enigi(this.innerText)">ö</button>
@@ -17,7 +17,7 @@
 <div id="output"></div>
 <div id="vortaro" style="display:none;">
 alfabeto : lafab
-artikolo : lartüg
+artikolo (teksto) : lartüg
 mi : ob
 mia : obik, oba
 traduki : tradutön
@@ -64,10 +64,15 @@ dateno : notet
 inventi : datuvön
 nova : nulik
 malnova : bäldik
+devi : mutön
+morgaŭ : odelo
+demandi : säkön
+fari : mekön
+interreto : Vüresod
 
 alfabeto : lafab
 substantivo : subsat
-artikolo : lartig
+artikolo (gramatiko) : lartig
 adjektivo : ladyek
 adverbo : ladvärb
 numeraloj : numavöds
@@ -114,8 +119,6 @@ smalükamavöds : malgrandigaj vortoj
 (la) floreto : floril
 (la) domo : dom
 dometo : domil
-
-artikolo : lartig
 
 (neŭtra artikolo) : el
 (maskla artikolo) : hiel

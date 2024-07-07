@@ -3,13 +3,15 @@
 
 body, button {
 font-family: Consolas;
-background-color: black;
+background-color: #222;
 color: white;
 font-size: 18px;
 }
 
 input {
-background-color: black;
+background-color: #222;
+border-color: white;
+border-style: solid;
 color: white;
 font-size: 18px;
 width: 90%;
